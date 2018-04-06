@@ -1,0 +1,120 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+
+
+@media (max-width:760px) {
+  ul {
+  width:100%;
+  display:none;
+  }
+  ul li {
+    display:block;
+    text-align: center;
+  }
+  .active {
+    display: block;
+  }
+
+}
+
+.navbar {
+max-height: 60px;
+margin-bottom: 20px;
+font-size: 1.2em !important;
+}
+
+.navbar a{
+  margin:20px; /*Adjust spacing between list objects in navbar */
+}
+
+#rm {
+  position:inherit;
+  top:-60px;
+  right: -600px;
+}
+
+.nav-item a:hover {
+  color: #b7a57a !important;
+}
+
+.map-responsive {
+	overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.col-md-4 {
+  left:1%;
+  width:10%;
+}
+
+#progressBar {
+    padding: 0;
+    list-style-type: none;
+    font-family: sans-serif;
+    font-size: 90%;
+    clear: both;
+    line-height: 1em;
+    margin: 0 -1px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#progressBar li {
+    float: left;
+    padding: 10px 30px 10px 40px;
+    background:  #06c3fa ;
+    color: #fff;
+    position: relative;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    width: 18%; /* Adjust # of arrows by changing width */
+    margin: 0 1px;
+}
+
+
+#progressBar li:before {
+    content: '';
+    border-left: 16px solid #fff;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+#progressBar li:after {
+    content: '';
+    border-left: 16px solid  #06c3fa;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 20;
+}
+
+#progressBar li.active {
+    background:#060dfa;
+}
+
+#progressBar li.active:after {
+    border-left-color:#060dfa;
+}
+
+.mainfooter {
+  background-color:#B2B1B1;
+}
+
+#homeNews {
+  margin-left: -25px;
+}
+
+#matiNews {
+  margin-left: -350px;
+}
